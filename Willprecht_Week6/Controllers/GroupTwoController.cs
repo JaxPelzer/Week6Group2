@@ -73,6 +73,7 @@ namespace Week6_Group2.Controllers
             return Ok(json);
 
         }
+        
 
         [Route("GetMarkets")]
         [HttpGet]
@@ -81,19 +82,32 @@ namespace Week6_Group2.Controllers
             HttpClient client = new HttpClient();
             dynamic? obj = new ExpandoObject();
             string result;
+            double pricer;
             try
             {
                 HttpResponseMessage response = client.GetAsync("https://www.cryptingup.com/api/markets").Result;
                 response.EnsureSuccessStatusCode();
                 result = response.Content.ReadAsStringAsync().Result;
+
+                
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
             var list = JsonConvert.DeserializeObject<RootObject>(result);
+            var coinList = new List<object>();
+            coinList.Add(list);
 
-            return Ok(list);
+            foreach (var item in list.Markets)
+            {
+                pricer = Convert.ToDouble(item.Price);
+                item.Price = pricer.ToString("0.00");
+            }
+
+
+
+            return Ok(coinList);
 
         }
     }
@@ -126,4 +140,6 @@ namespace Week6_Group2.Controllers
         public string? Status { get; set; }
         public string? Updated_at { get; set; }
     }
+
+
 }

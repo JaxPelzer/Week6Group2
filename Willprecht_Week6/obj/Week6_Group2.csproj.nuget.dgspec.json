@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SCTCC\\Semester 4\\C# Programming 2\\Week 6\\Willprecht_Week6\\Week6_Group2.csproj": {}
+    "C:\\Users\\jaxtp\\Desktop\\Homework\\c#2\\week5\\Week6Group2\\Willprecht_Week6\\Week6_Group2.csproj": {}
   },
   "projects": {
-    "D:\\SCTCC\\Semester 4\\C# Programming 2\\Week 6\\Willprecht_Week6\\Week6_Group2.csproj": {
+    "C:\\Users\\jaxtp\\Desktop\\Homework\\c#2\\week5\\Week6Group2\\Willprecht_Week6\\Week6_Group2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SCTCC\\Semester 4\\C# Programming 2\\Week 6\\Willprecht_Week6\\Week6_Group2.csproj",
+        "projectUniqueName": "C:\\Users\\jaxtp\\Desktop\\Homework\\c#2\\week5\\Week6Group2\\Willprecht_Week6\\Week6_Group2.csproj",
         "projectName": "Week6_Group2",
-        "projectPath": "D:\\SCTCC\\Semester 4\\C# Programming 2\\Week 6\\Willprecht_Week6\\Week6_Group2.csproj",
-        "packagesPath": "C:\\Users\\Jacob\\.nuget\\packages\\",
-        "outputPath": "D:\\SCTCC\\Semester 4\\C# Programming 2\\Week 6\\Willprecht_Week6\\obj\\",
+        "projectPath": "C:\\Users\\jaxtp\\Desktop\\Homework\\c#2\\week5\\Week6Group2\\Willprecht_Week6\\Week6_Group2.csproj",
+        "packagesPath": "C:\\Users\\jaxtp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jaxtp\\Desktop\\Homework\\c#2\\week5\\Week6Group2\\Willprecht_Week6\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jacob\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jaxtp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -71,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200-preview.21617.4\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
