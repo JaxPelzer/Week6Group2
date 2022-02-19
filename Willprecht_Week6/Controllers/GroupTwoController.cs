@@ -96,8 +96,7 @@ namespace Week6_Group2.Controllers
                 return BadRequest(ex.Message);
             }
             var list = JsonConvert.DeserializeObject<RootObject>(result);
-            var coinList = new List<object>();
-            coinList.Add(list);
+            
 
             foreach (var item in list.Markets)
             {
@@ -107,7 +106,7 @@ namespace Week6_Group2.Controllers
 
 
 
-            return Ok(coinList);
+            return Ok(list);
 
         }
     }
