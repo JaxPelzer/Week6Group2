@@ -83,6 +83,7 @@ namespace Week6_Group2.Controllers
             dynamic? obj = new ExpandoObject();
             string result;
             double pricer;
+            DateTime time;
             try
             {
                 HttpResponseMessage response = client.GetAsync("https://www.cryptingup.com/api/markets").Result;
@@ -102,6 +103,8 @@ namespace Week6_Group2.Controllers
             {
                 pricer = Convert.ToDouble(item.Price);
                 item.Price = pricer.ToString("0.00");
+                time = DateTime.Parse(item.Updated_at);
+                item.Updated_at = time.ToString("F");
             }
 
 
